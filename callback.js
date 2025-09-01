@@ -1,20 +1,32 @@
 
 
-// const greeting = (name) => {
-//     console.log("hello : " ,  name)
+
+
+// const greetings = (name) => {
+//     console.log(" Hello ",name);
 // }
 
-// const callback = (callback) => {
-//     callback(callback);
+// const cb =(callback) => {
+//     callback("Nayan");
 // }
+// cb(greetings);
 
-// callback(greeting);
 
-const greetings = (name) => {
-    console.log(" Hello ",name);
+const printSum = (sum) => {
+    console.log("Sum is :" , sum);
 }
 
-const cb =(callback) => {
-    callback("Nayan");
+const sumCount = (cb) => {
+    const value = (a , b) => {
+        return a + b;
+    }
+    const result = value(60 ,40);
+   
+    
+    cb(result);
 }
-cb(greetings);
+const values =  sumCount(printSum);
+
+
+
+
